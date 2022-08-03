@@ -83,7 +83,7 @@ def prisoner_loops_subceed_max(prisoner_loops: dict[int, int],
     """
     if print_loops:
         for prisoner_num, prisoner_loop in prisoner_loops.items():
-            print(f'Prisoner: {prisoner_num} -- Loop: {prisoner_loop}')
+            print(f'Prisoner Num: {prisoner_num} || Num of Loops: {prisoner_loop}')
 
     for prisoner_num, prisoner_loop in prisoner_loops.items():
         if prisoner_loop > max_loop:
@@ -108,7 +108,7 @@ def loop_calculations(iterations: int, max_loop=50) -> float:
         loops_subceeds_max = prisoner_loops_subceed_max(
                                             prisoner_loops_dict,
                                             max_loop,
-                                            print_loops=False)
+                                            print_loops=True)
         if loops_subceeds_max:
             subceed_max_counter += 1
 
